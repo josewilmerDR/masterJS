@@ -5,6 +5,11 @@ let obj = {
 };
 function removeNumberValues(obj) {
     // your code here
+    for(let prop in obj){
+        if(typeof obj[prop] === "number"){
+            delete obj[prop];
+        }
+    }
     
 }
 
